@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Top Three Languages</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" type="text/css" rel="stylesheet prefetch">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" type="text/css" rel="stylesheet prefetch">
+
+    <link rel="stylesheet" href="themes/three-themes.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- External Navigation Panel -->
+    <div data-role="panel" id="navPanel" data-display="push" data-rel="main-menu-panel">
+      <ul data-ajax="false" data-inset="true">
+        <li>
+          <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext center-btn">&nbsp;</a>
+        </li>
+        <li><a href="#elixir-page" class="ui-btn nav-panel-link">Elixir</a></li>
+        <li><a href="#ruby-page" class="ui-btn nav-panel-link">Ruby</a></li>
+        <li><a href="#golang-page" class="ui-btn nav-panel-link">Golang</a></li>
+      </ul>
+    </div>
+
+    <div data-role="page" data-theme="c" data-add-back-btn="true" id="home">
+      <div data-role="header" data-id="main-header"></div>
+
+      <div data-role="header" data-position="fixed">
+        <h1>TopThreeLanguages</h1>
+        <a href="#navPanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+        <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#elixir-page" data-icon="arrow-r">Elixir</a></li>
+            <li><a href="#ruby-page" data-icon="arrow-r">Ruby</a></li>
+            <li><a href="#golang-page" data-icon="arrow-r">Golang</a></li>
+            <li><a href="#feedback" data-icon="action">Leave Feedback</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div data-role="main" class="body-container ui-content">
+        <div class="hero-container">
+          <div class="site-logo-container">
+            <object type="image/svg+xml" data="img/three_lang_logo.svg"></object>
+          </div>
+          <div class="site-tagline-container">
+            <h1 class="site-tagline">3 Languages Worth&nbsp;Learning</h1>
+            <h2 class="page-title">Home</h2>
+          </div>
+        </div>
+
+        <main class="language-block-container">
+
+          <hr class="language-divider">
+          <ul data-role="listview" data-filter="true">
+
+            <!-- ELIXIR SECTION -->
+            <section class="language-block">
+              <h1 class="language-title">Elixir</h1>
+              <div class="lang-logo">
+                <a href="#elixir-page">
+                  <img src="img/elixir_logo.png" alt="elixir language logo">
+                </a>
+              </div>
+
+              <h3 class="lang-descriptor">Functional</h3>
+              <div class="ui-grid-b lang-main-body">
+                <div class="ui-block-a">
+                  <div class="ui-bar lang-description">Concurrent</div>
+                </div>
+                <div class="ui-block-b">
+                  <div class="ui-bar lang-description">Distributed</div>
+                </div>
+                <div class="ui-block-c">
+                  <div class="ui-bar lang-description">Metaprogramming</div>
+                </div>
+              </div>
+
+            </section>
+            <!-- END ELIXIR SECTION -->
+
+            <hr class="language-divider">
+
+            <!-- RUBY SECTION -->
+            <section class="language-block">
+              <h1 class="language-title">Ruby</h1>
+              <div class="lang-logo">
+                <a href="#ruby-page">
+                  <object type="image/svg+xml" data="img/ruby_logo.svg"></object>
+                </a>
+              </div>
+              <h3 class="lang-descriptor">Object Oriented</h3>
+              <div class="ui-grid-b lang-main-body">
+                <div class="ui-block-a">
+                  <div class="ui-bar lang-description">Dynamic</div>
+                </div>
+                <div class="ui-block-b">
+                  <div class="ui-bar lang-description">Developer Happiness</div>
+                </div>
+                <div class="ui-block-c">
+                  <div class="ui-bar lang-description">Reflective</div>
+                </div>
+              </div>
+            </section>
+            <!-- END RUBY SECTION -->
+
+            <hr class="language-divider">
+
+            <!-- GOLANG SECTION -->
+            <section class="language-block">
+              <h1 class="language-title">Golang</h1>
+              <div class="lang-logo">
+                <a href="#golang-page">
+                  <object type="image/svg+xml" data="img/golang_logo.svg"></object>
+                </a>
+              </div>
+
+              <h3 class="lang-descriptor">Imperative</h3>
+              <div class="ui-grid-b lang-main-body">
+                <div class="ui-block-a">
+                  <div class="ui-bar lang-description">Compiled</div>
+                </div>
+                <div class="ui-block-b">
+                  <div class="ui-bar lang-description">Statically-Typed</div>
+                </div>
+                <div class="ui-block-c">
+                  <div class="ui-bar lang-description">Concurrent</div>
+                </div>
+              </div>
+
+            </section>
+            <!-- END GOLANG SECTION -->
+          </ul>
+
+          <hr class="language-divider">
+        </main>
+      </div>
+
+      <section class="homepage-about">
+        <h4 class="homepage-about-description">About TopThreeLanguages</h4>
+        <p>TopThreeLanguages is a collection of unique programming languages that I enjoy learning in my free time. After exploring numerous programming languages, I've decided to focus most (not all) of my energy learning these radically different languages.</p>
+      </section>
+
+      <footer data-role="footer">
+        <p>Copyright &copy; 2017 TopThreeLanguages</p>
+      </footer>
+
+    </div>
+
+    <!-- ELIXIR PAGE -->
+    <div data-role="page" id="elixir-page" data-theme="a" data-add-back-btn="true">
+      <div data-role="header" data-add-back-btn="true" data-position="fixed">
+        <h1>Elixir</h1>
+        <a href="#navPanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+        <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#elixir-page" data-icon="arrow-r">Elixir</a></li>
+            <li><a href="#ruby-page" data-icon="arrow-r">Ruby</a></li>
+            <li><a href="#golang-page" data-icon="arrow-r">Golang</a></li>
+            <li><a href="#feedback" data-icon="action">Leave Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-role="main" class="ui-content">
+
+        <div class="lang-logo center">
+          <img src="img/elixir_logo.png" alt="Elixir language logo">
+        </div>
+        <h2 class="lang-main-header">Main Header</h2>
+        <h3 class="lang-main-subheading">Subheading</h3>
+        <hr class="lang-main-hr">
+        <p class="lang-main-body">Body</p>
+
+        <div data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+          <a href="#golang-page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-inline="true">Golang</a>
+          <a href="#ruby-page" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-inline="true">Ruby</a>
+        </div>
+      </div>
+
+      <footer data-role="footer">
+        <p>Copyright &copy; 2017 TopThreeLanguages</p>
+      </footer>
+    </div>
+    <!-- END ELIXIR PAGE -->
+
+    <!-- RUBY PAGE -->
+    <div data-role="page" id="ruby-page" data-theme="a" data-add-back-btn="true">
+      <div data-role="header" data-add-back-btn="true" data-position="fixed">
+        <h1>Ruby</h1>
+        <a href="#navPanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+        <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#elixir-page" data-icon="arrow-r">Elixir</a></li>
+            <li><a href="#ruby-page" data-icon="arrow-r">Ruby</a></li>
+            <li><a href="#golang-page" data-icon="arrow-r">Golang</a></li>
+            <li><a href="#feedback" data-icon="action">Leave Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <div class="lang-logo center">
+          <img src="img/ruby_logo.svg" alt="Ruby language logo">
+        </div>
+        <h2 class="lang-main-header">Main Header</h2>
+        <h3 class="lang-main-subheading">Subheading</h3>
+        <hr class="lang-main-hr">
+        <p class="lang-main-body">Body</p>
+
+        <div data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+          <a href="#elixir-page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-inline="true">Elixir</a>
+          <a href="#golang-page" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-inline="true">Golang</a>
+        </div>
+
+      </div>
+
+      <footer data-role="footer">
+        <p>Copyright &copy; 2017 TopThreeLanguages</p>
+      </footer>
+    </div>
+    <!-- END RUBY PAGE -->
+
+    <!-- GOLANG PAGE -->
+    <div data-role="page" data-theme="a" id="golang-page" data-add-back-btn="true">
+      <div data-role="header" data-add-back-btn="true" data-position="fixed">
+        <h1>Golang</h1>
+        <a href="#navPanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+        <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#elixir-page" data-icon="arrow-r">Elixir</a></li>
+            <li><a href="#ruby-page" data-icon="arrow-r">Ruby</a></li>
+            <li><a href="#golang-page" data-icon="arrow-r">Golang</a></li>
+            <li><a href="#feedback" data-icon="action">Leave Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <div class="lang-logo center">
+          <img src="img/golang_logo.png" alt="Golang language logo">
+        </div>
+        <h2 class="lang-main-header">Main Header</h2>
+        <h3 class="lang-main-subheading">Subheading</h3>
+        <hr class="lang-main-hr">
+        <p class="lang-main-body">Body</p>
+
+        <div data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+          <a href="#ruby-page" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-inline="true">Ruby</a>
+          <a href="#elixir-page" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-inline="true">Elixir</a>
+        </div>
+
+      </div>
+
+      <footer data-role="footer">
+        <p>Copyright &copy; 2017 TopThreeLanguages</p>
+      </footer>
+    </div>
+    <!-- END GOLANG PAGE -->
+
+    <!-- FEEDBACK PAGEst-->
+    <div data-role="page" id="feedback" data-theme="b" data-add-back-btn="true">
+      <div data-role="header" data-add-back-btn="true">
+        <h1>Leave Us Feedback</h1>
+        <a href="#navPanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+        <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#elixir-page" data-icon="arrow-r">Elixir</a></li>
+            <li><a href="#ruby-page" data-icon="arrow-r">Ruby</a></li>
+            <li><a href="#golang-page" data-icon="arrow-r">Golang</a></li>
+            <li><a href="#feedback" data-icon="action">Leave Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-role="content">
+
+        <form id="autosave">
+          <!-- USER NAME AND CONTACT INFORMATION -->
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName" data-clear-btn="true">
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName" data-clear-btn="true">
+          <label for="lastName">Email:</label>
+          <input type="email" name="lastName" id="email" data-clear-btn="true">
+
+          <!-- USER FAVORITE PROGRAMMING LANGUAGES DROPDOWN -->
+          <label for="select">What's Your Favorite Language?</label>
+          <select name="select" id="favoriteLanguage">
+            <option></option>
+            <option value="Elixir">Elixir</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Golang">Golang</option>
+          </select>
+
+          <!-- USER PROGRAMMING LANGUAGES CHECKBOX -->
+          <fieldset data-role="controlgroup" id="languagesUsed">
+            <legend>Which Programming Languages Do You Use?</legend>
+
+            <input type="checkbox" name="language" value="C" id="checkbox-h-2a">
+            <label for="checkbox-h-2a">C</label>
+
+            <input type="checkbox" name="language" value="C++" id="checkbox-h-2b">
+            <label for="checkbox-h-2b">C++</label>
+
+            <input type="checkbox" name="language" value="C#" id="checkbox-h-2c">
+            <label for="checkbox-h-2c">C#</label>
+
+            <input type="checkbox" name="language" value="Clojure" id="checkbox-h-2d">
+            <label for="checkbox-h-2d">Clojure</label>
+
+            <input type="checkbox" name="language" value="Elixir" id="checkbox-h-2e">
+            <label for="checkbox-h-2e">Elixir</label>
+
+            <input type="checkbox" name="language" value="Go" id="checkbox-h-2f">
+            <label for="checkbox-h-2f">Go</label>
+
+            <input type="checkbox" name="language" value="Haskell" id="checkbox-h-2g">
+            <label for="checkbox-h-2g">Haskell</label>
+
+            <input type="checkbox" name="language" value="Java" id="checkbox-h-2h">
+            <label for="checkbox-h-2h">Java</label>
+
+            <input type="checkbox" name="language" value="JavaScript" id="checkbox-h-2i">
+            <label for="checkbox-h-2i">JavaScript</label>
+
+            <input type="checkbox" name="language" id value="Objective-C"="checkbox-h-2j">
+            <label for="checkbox-h-2j">Objective-C</label>
+
+            <input type="checkbox" name="language" value="PHP" id="checkbox-h-2k">
+            <label for="checkbox-h-2k">PHP</label>
+
+            <input type="checkbox" name="language" value="Python" id="checkbox-h-2l">
+            <label for="checkbox-h-2l">Python</label>
+
+            <input type="checkbox" name="language" value="Perl" id="checkbox-h-2m">
+            <label for="checkbox-h-2m">Perl</label>
+
+            <input type="checkbox" name="language" value="Ruby" id="checkbox-h-2n">
+            <label for="checkbox-h-2n">Ruby</label>
+
+            <input type="checkbox" name="language" value="Smalltalk" id="checkbox-h-2o">
+            <label for="checkbox-h-2o">Smalltalk</label>
+
+          </fieldset>
+
+          <!-- USER EXPERIENCE RADIO BUTTONS -->
+          <fieldset data-role="controlgroup" id="yearsExperience" name="yearsExperience">
+            <legend>How Many Years of Programming Experience Do You Have?</legend>
+            <label for="radio1">
+              <input type="radio" name="experience" id="radio1" value="Over 20 Years">Over 20 Years</input>
+            </label>
+            <label for="radio2">
+              <input type="radio" name="experience" id="radio2" value="10 to 15 Years">10 to 15 Years</input>
+            </label>
+            <label for="radio3">
+              <input type="radio" name="experience" id="radio3" value="6 to 10 Years">6 to 10 Years</input>
+            </label>
+
+            <label for="radio3">
+              <input type="radio" name="experience" id="radio3" value="1 to 5 Years">1 to 5 Years</input>
+            </label>
+
+            <label for="radio3">
+              <input type="radio" name="experience" id="radio3" value="Less Than 1 Year">Less Than 1 Year</input>
+            </label>
+          </fieldset>
+
+        </form>
+
+        <!-- FORM BUTTONS TO CONTROL WEB STORAGE SUBMISSION AND DELETION -->
+        <button class="submit" onclick="storeData()">Submit to Storage</button>
+        <button class="empty" onclick="emptyStorage()">Empty Storage</button>
+        <button class="view" onclick="viewStorage()">View Storage</button>
+
+        <div id="storageStatus"></div>
+        <div id="storageOutput"></div>
+      </div>
+
+      <div data-role="footer">
+        <h4>Copyright &copy; 2017 Practice Exercises, Inc. All rights reserved.</h4>
+      </div>
+
+      <script>
+      // userStorageData stores the user submitted form data.
+      var userStorageData = {};
+      // StorageData represents a data model/prototype for user data.
+      function StorageData() {
+        this.firstName = $("#firstName").val();
+        this.lastName = $("#lastName").val();
+        this.email = $("#email").val();
+        this.favoriteLanguage = $("#favoriteLanguage").val();
+        this.languagesUsed = $('input[name="language"]:checked').map(function() {
+          return this.value;
+        }).get().join(", ");
+        this.yearsExperience = $('input[name="experience"]:checked').map(function() {
+          return this.value;
+        }).get();
+        return this;
+      }
+      // storeData stores data to Local and Session storage if the user's browser supports it.
+      function storeData() {
+        userStorageData = new StorageData();
+        if (typeof(Storage) !== "undefined") {
+          storeToSession()
+          storeToLocalStorage()
+          $("#storageStatus").text("User Information Was Successfully Added To Storage");
+          viewStorage();
+        } else {
+          $("#storageStatus").text("Sorry Your browser does not support Storage");
+        }
+      }
+      // storeToSession stores HTML form data to Session Storage.
+      function storeToSession() {
+        sessionStorage.firstName = userStorageData.firstName;
+        sessionStorage.lastName = userStorageData.lastName;
+        sessionStorage.email = userStorageData.email;
+        sessionStorage.favoriteLanguage = userStorageData.favoriteLanguage;
+        sessionStorage.languagesUsed = userStorageData.languagesUsed;
+        sessionStorage.yearsExperience = userStorageData.yearsExperience;
+      }
+      // storeToLocalStorage stores HTML form data to Local Storage.
+      function storeToLocalStorage() {
+        localStorage.setItem("firstName", userStorageData.firstName);
+        localStorage.setItem("lastName", userStorageData.lastName);
+        localStorage.setItem("email", userStorageData.email);
+        localStorage.setItem("favoriteLanguage", userStorageData.favoriteLanguage);
+        localStorage.setItem("languagesUsed", userStorageData.languagesUsed);
+        localStorage.setItem("yearsExperience", userStorageData.yearsExperience);
+      }
+      // emptyStorage empties both Local and Session Web Storage Data.
+      function emptyStorage() {
+        typeof(window.sessionStorage) != undefined ? sessionStorage.clear() : false;
+        typeof(window.localStorage) != undefined ? localStorage.clear() : false;
+        $("#storageOutput").empty();
+        $("#storageStatus").text("Storage Was Successfully Cleared");
+        viewStorage();
+      }
+      // viewStorage adds both Local and Session Web Storage Data to the DOM.
+      function viewStorage() {
+        outputSessionStorage();
+        outputLocalStorage();
+      }
+      // outputSessionStorage appends Session Storage items to the DOM.
+      function outputSessionStorage() {
+        if (sessionStorage.length !== 0) {
+          $("#storageOutput").empty();
+          $("#storageOutput").append("<h3>SESSION STORAGE</h3>")
+          $.map(sessionStorage, function(val, i) {
+            $("#storageOutput").append("<p>" +
+              i + ":<span>" + val + "</span></p>");
+          });
+        } else if (sessionStorage.length === 0 && $("#storageOutput")[0].textContent === "") {
+          $("#storageOutput").append("<p>Session Storage Is Currently Empty</p>");
+        }
+      }
+      // outputLocalStorage appends Local Storage items to the DOM.
+      function outputLocalStorage() {
+        if (localStorage.length > 1) {
+          var firstName = "<p>firstName: <span>" + localStorage.getItem("firstName") + "</span></p>";
+          var lastName = "<p>lastName: <span>" + localStorage.getItem("lastName") + "</span></p>";
+          var email = "<p>email: <span>" + localStorage.getItem("email") + "</span></p>";
+          var favoriteLanguage = "<p>favoriteLanguage: <span>" + localStorage.getItem("favoriteLanguage") + "</span></p>";
+          var languagesUsed = "<p>languagesUsed: <span>" + localStorage.getItem("languagesUsed") + "</span></p>";
+          var yearsExperience = "<p>yearsExperience: <span>" + localStorage.getItem("yearsExperience") + "</span></p>";
+          var storageData = firstName + lastName + email + favoriteLanguage + languagesUsed + yearsExperience;
+          $("#storageOutput").append("<h3>LOCAL STORAGE</h3><hr class='hDivider'>" + storageData);
+        } else if (localStorage.length < 2 && $("#storageOutput")[0].textContent === "Session Storage Is Currently Empty") {
+          $("#storageOutput").append("<p>Local Storage Is Currently Empty</p>");
+        }
+      }
+      </script>
+
+      <script>
+      $(function() {
+        $("div[data-role='panel']").panel().enhanceWithin();
+      });
+      </script>
+
+    </div>
+    <!-- END USER FORM SECTION -->
+
+  </body>
+
+</html>
