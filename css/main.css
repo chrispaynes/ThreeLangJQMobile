@@ -4,6 +4,10 @@ font-family: 'Playfair Display', serif;*/
   * {
     box-sizing: border-box;
     /*border: 1px solid;*/
+    outline: none;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
   }
   
   body,
@@ -48,7 +52,6 @@ font-family: 'Playfair Display', serif;*/
   
   .nav-panel-link:hover {
     background-color: #646f70;
-    color: #f0f0f0;
     text-shadow: none;
   }
   /*PAGE HEADER*/
@@ -274,4 +277,20 @@ font-family: 'Playfair Display', serif;*/
   html body .ui-group-theme-a .ui-btn:visited,
   html head+body .ui-btn.ui-btn-a:visited {
     background-color: #f0f0f0;
+  }
+  
+  ui-link:hover {
+    color: inherit;
+  }
+  
+  a.ui-link.ui-btn.ui-icon-arrow-r.ui-btn-icon-top:hover {
+    color: inherit
+  }
+  
+  a.ui-btn.ui-icon-home.ui-btn-icon-notext.center-btn {
+    border: none;
+  }
+  
+  a.ui-btn.ui-btn-active {
+    border: none;
   }
