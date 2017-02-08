@@ -1,7 +1,6 @@
 #Three Lang jQuery Mobile App
 
-Three Lang jQuery Mobile App is a mobile web application that where users can select from a list of my favorite programming languages. (Live Site)[http://www]
-The URL of the sample or production site.
+Three Lang jQuery Mobile App is a mobile web application that where users can select from a list of my favorite programming languages. [View the live site](https://chrispaynes.github.io/ThreeLangJQMobile/)
 
 ###Requirements
 * Must use HTML5, CSS3, and the jQuery Mobile framework.
@@ -69,6 +68,3 @@ Descriptions of buttons on each page, the user actions, and the outcomes or resu
   * Fill out the HTML form and click "Submit" to store form information in Web Storage.
   * Click "Empty Storage" to clear information from Web Storage.
   * Click "View Storage" to view the information currently stored in Web Storage.
-
-
-
